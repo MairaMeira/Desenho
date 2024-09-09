@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnicas de Desenho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Técnicas de Desenho</h1>
+        <nav>
+            <ul>
+                <li><a href="#pagina-principal" class="tab-link active">Página Principal</a></li>
+                <li><a href="#inicio" class="tab-link">Início</a></li>
+                <li><a href="#sobre" class="tab-link">Sobre</a></li>
+                <li><a href="#contato" class="tab-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção Página Principal -->
+        <section id="pagina-principal" class="tab-content">
+            <h2>Página Principal</h2>
+            <p>Aqui você irá aprender técnicas de desenho.</p>
+            <img src="./473ad2ca4eeee52eb0f5d0b7b78d5bec.jpg" alt="Imagem de Desenho">  
+        </section>
+
+          <!-- Seção Início -->
+        <section id="inicio" class="tab-content">
+            <h2>Início</h2>
+            <p>Para começar a desenhar e aprimorar suas habilidades, siga estas dicas:</p>
+            
+            <h3>1. Materiais Básicos</h3>
+            <p>Escolher os materiais certos é essencial para o desenho. Aqui estão os itens recomendados:</p>
+            <ul>
+                <li><strong>Papel:</strong> Use papel de boa qualidade, como papel para desenho, que evita borrões e permite um acabamento suave.</li>
+                <li><strong>Lápis:</strong> Comece com um conjunto de lápis de diferentes durezas (H para linhas finas e B para sombreamento).</li>
+                <li><strong>Borracha:</strong> Utilize uma borracha macia para correção e uma borracha em forma de lápis para detalhes.</li>
+            </ul>
+        
+
+            <h3>2. Técnicas de Desenho</h3>
+            <p>Praticar técnicas básicas pode melhorar muito seu desenho:</p>
+            <ul>
+                <li><strong>Traços Básicos:</strong> Pratique linhas retas e curvas para melhorar o controle do lápis.</li>
+                <li><strong>Sombreamento:</strong> Aprenda a criar profundidade usando diferentes técnicas de sombreamento, como hachuras e esfumaçado.</li>
+                <li><strong>Perspectiva:</strong> Entenda a perspectiva para desenhar objetos e cenários com profundidade e realismo.</li>
+            </ul>
+            <img src="6136dd7d9cdb722c88786186d41d3615.jpg" alt="Técnicas de Desenho" width="200" height="200">
+
+            <h3>3. Desenhando Partes do Corpo</h3>
+            <p>Para desenhar o corpo humano, é importante conhecer as proporções e técnicas específicas:</p>
+
+            <h4>Cabeça e Rosto</h4>
+            <p>Comece desenhando a cabeça como uma forma oval. Adicione linhas guias para os olhos, nariz e boca, e pratique diferentes expressões faciais.</p>
+            <img src="46a3153aef865bdf39b61ad9f4b6e6e5.jpg" alt="Cabeça e Rosto" width="200" height="200">
+
+            <h4>Corpo e Proporções</h4>
+            <p>Estude as proporções do corpo humano. Geralmente, a altura do corpo pode ser dividida em 8 cabeças para uma proporção ideal.</p>
+            <img src="6accdb744d8891b48e17966c5c87b42e.jpg" alt="Corpo e Proporções" width="200" height="200">
+
+            <h4>Braços e Mãos</h4>
+            <p>Desenhe os braços como cilindros e adicione detalhes como articulações e músculos. Pratique desenhar as mãos em diferentes posições.</p>
+            <img src="28360543000eb3a10779e330b56dbf64.jpg" alt="Braços e Mãos" width="200" height="200">
+
+
+            <h4>Pernas e Pés</h4>
+            <p>Desenhe as pernas com uma forma tubular e adicione detalhes para os músculos. Os pés devem ser desenhados com cuidado para representar corretamente a perspectiva e o ângulo.</p>
+            <img src="454df2b99e0110fd80deac0ae89507d0.jpg" alt="Pernas e Pés"width="200" height="200">
+
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="tab-content">
+            <h2>Sobre</h2>
+            <p>Este site foi criado para ajudar pessoas a aprender e aprimorar suas habilidades de desenho. Nosso objetivo é fornecer recursos e técnicas para que você possa se desenvolver artisticamente e alcançar seus objetivos criativos.</p>
+            <p>Com uma variedade de tutoriais e dicas, esperamos tornar o processo de aprendizagem mais acessível e eficiente para todos, independentemente do nível de habilidade.</p>
+            <img src="6de217054e12ebd6292af42539263493.jpg" alt="Imagem de Desenho">
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="tab-content">
+            <h2>Contato</h2>
+            <p>Se você tiver alguma duvida entre em contato    e-mail: mairaveiga2018@gmail.com
+    <footer>
+        <p>&copy; 2024 Técnicas de Desenho. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Script para alternar entre abas
+        document.querySelectorAll('.tab-link').forEach(tab => {
+            tab.addEventListener('click', function(event) {
+                event.preventDefault();
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.style.display = 'none';
+                });
+                document.querySelectorAll('.tab-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                document.querySelector(this.getAttribute('href')).style.display = 'block';
+                this.classList.add('active');
+            });
+        });
+
+        // Exibir a primeira aba por padrão
+        document.querySelector('.tab-link.active').click();
+    </script>
+</body>
+</html>
